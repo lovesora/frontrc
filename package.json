@@ -21,8 +21,8 @@
     "url": "https://github.com/lovesora/frontrc/issues"
   },
   "homepage": "https://github.com/lovesora/frontrc#readme",
-  "devDependencies": {
-    "eslintrc": "^1.0.4",
+  "dependencies": {
+    "eslintrc": "^1.0.*",
     "ternrc": "^1.0.*",
     "vimrc": "^1.0.*"
   }
