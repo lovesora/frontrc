@@ -1,7 +1,7 @@
 {
-  "name": "rc",
+  "name": "frontrc",
   "version": "1.0.0",
-  "description": "rc manager",
+  "description": "front rc manager",
   "bin": {
     "rc": "./bin/rc.js"
   },
@@ -10,7 +10,7 @@
   "scripts": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lovesora/rc.git"
+    "url": "git+https://github.com/lovesora/frontrc.git"
   },
   "keywords": [
     "rc"
@@ -18,9 +18,9 @@
   "author": "liuxin",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/lovesora/rc/issues"
+    "url": "https://github.com/lovesora/frontrc/issues"
   },
-  "homepage": "https://github.com/lovesora/rc#readme",
+  "homepage": "https://github.com/lovesora/frontrc#readme",
   "devDependencies": {
     "eslintrc": "^1.0.4",
     "ternrc": "^1.0.*",
