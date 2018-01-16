@@ -22,7 +22,8 @@
   },
   "homepage": "https://github.com/lovesora/rc#readme",
   "devDependencies": {
-    "ternrc": "^1.0.1",
-    "vimrc": "^1.0.0"
+    "eslintrc": "^1.0.4",
+    "ternrc": "^1.0.*",
+    "vimrc": "^1.0.*"
   }
 }

@@ -5,9 +5,7 @@ let homedir = os.homedir();
 let fsExt   = require(path.join('../lib/ext/fs-ext'));
 let invoke  = require(path.join('../lib/fn/invoke'));
 
-let init = () => {
-    return fsExt.createSync(require.resolve('vimrc'), path.join(homedir, '.vimrc'), {isBackup: true});
-}
+let init = () => fsExt.createSync(require.resolve('vimrc'), path.join(homedir, '.vimrc'), {isBackup: true});
 
 
 let vimrc = (args) => {
