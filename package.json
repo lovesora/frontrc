@@ -1,0 +1,28 @@
+{
+  "name": "rc",
+  "version": "1.0.0",
+  "description": "rc manager",
+  "bin": {
+    "rc": "./bin/rc.js"
+  },
+  "main": "./bin/rc.js",
+  "preferGlobal": true,
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lovesora/rc.git"
+  },
+  "keywords": [
+    "rc"
+  ],
+  "author": "liuxin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lovesora/rc/issues"
+  },
+  "homepage": "https://github.com/lovesora/rc#readme",
+  "devDependencies": {
+    "ternrc": "^1.0.1",
+    "vimrc": "^1.0.0"
+  }
+}
