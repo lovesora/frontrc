@@ -23,6 +23,8 @@
   "homepage": "https://github.com/lovesora/frontrc#readme",
   "dependencies": {
     "eslintrc": "^1.0.*",
+    "htmlhintrc": "^1.0.*",
+    "stylelintrc": "^1.0.*",
     "ternrc": "^1.0.*",
     "vimrc": "^1.0.*"
   }
