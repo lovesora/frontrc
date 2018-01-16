@@ -1,6 +1,6 @@
 {
   "name": "frontrc",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "front rc manager",
   "bin": {
     "rc": "./bin/rc.js"
