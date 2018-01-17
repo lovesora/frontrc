@@ -19,9 +19,8 @@ let stylelintrc = (args) => {
     let methods = {
         init,
     };
-    let order = ['--init'];
 
-    invoke(methods, order, args);
+    invoke(methods, args);
 };
 
 module.exports = stylelintrc;

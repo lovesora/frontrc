@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/lovesora/lx-rc#readme",
   "dependencies": {
+    "aria2rc": "^1.0.*",
     "eslintrc": "^1.0.*",
     "htmlhintrc": "^1.0.*",
     "stylelintrc": "^1.0.*",

@@ -12,9 +12,8 @@ let vimrc = (args) => {
     let methods = {
         init: init
     };
-    let order = ['--init'];
 
-    invoke(methods, order, args);
+    invoke(methods, args);
 };
 
 module.exports = vimrc;

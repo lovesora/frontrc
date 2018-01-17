@@ -15,7 +15,7 @@ let ternrc = (args) => {
     };
     let order = ['--init', '--init-node'];
 
-    invoke(methods, order, args);
+    invoke(methods, args, order);
 };
 
 module.exports = ternrc;
