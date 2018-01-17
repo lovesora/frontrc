@@ -1,7 +1,7 @@
 {
-  "name": "frontrc",
+  "name": "lx-rc",
   "version": "1.0.3",
-  "description": "front rc manager",
+  "description": "rc manager",
   "bin": {
     "rc": "./bin/rc.js"
   },
@@ -10,7 +10,7 @@
   "scripts": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lovesora/frontrc.git"
+    "url": "git+https://github.com/lovesora/lx-rc.git"
   },
   "keywords": [
     "rc"
@@ -18,9 +18,9 @@
   "author": "liuxin",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/lovesora/frontrc/issues"
+    "url": "https://github.com/lovesora/lx-rc/issues"
   },
-  "homepage": "https://github.com/lovesora/frontrc#readme",
+  "homepage": "https://github.com/lovesora/lx-rc#readme",
   "dependencies": {
     "eslintrc": "^1.0.*",
     "htmlhintrc": "^1.0.*",
