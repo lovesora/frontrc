@@ -1,6 +1,6 @@
 {
   "name": "lx-rc",
-  "version": "1.0.6",
+  "version": "1.0.4",
   "description": "rc manager",
   "bin": {
     "rc": "./bin/rc.js"
