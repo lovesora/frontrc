@@ -36,3 +36,12 @@ rc stylelint --init
 # cd your project root
 rc htmlhint --init
 ```
+
+## aria2
+```bash
+# will create ~/.aria2rc
+rc aria2 --init
+
+# start rc server
+rc aria2 --start
+```

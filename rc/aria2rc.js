@@ -1,41 +1,49 @@
 let path         = require('path');
-let os           = require('os');
-let spawn        = require('child_process').spawn;
-let homedir      = os.homedir();
+let fs           = require('fs');
 
+let _var         = require('../lib/var/var');
 let fsExt        = require(path.join('../lib/ext/fs-ext'));
-let invoke       = require(path.join('../lib/fn/invoke'));
 let msg          = require(path.join('../lib/fn/msg'));
+let invoke       = require(path.join('../lib/fn/invoke'));
+let exec         = require(path.join('../lib/fn/exec'));
 
-let init = () => fsExt.createSync(require.resolve('aria2rc'), path.join(homedir, '.aria2rc'));
+let install = () => {
+    let aria2ReleaseUri = 'https://github.com/aria2/aria2/releases/download/release-1.33.1/aria2-1.33.1.tar.gz',
+        aria2FileDir = path.join(_var.project.pwd, 'tmp'),
+        aria2Dir = 'aria2-1.33.1',
+        aria2FilePath = path.join(aria2FileDir, aria2Dir + '.tar.gz');
 
-let start = () => {
-    try {
-        let aria2 = spawn('aria2c', [`--conf-path=${homedir}/.aria2rc`]);
-        msg.success('aira2 started!');
+    let execShell = () => {
+        exec('sh', [`${_var.project.pwd}/bash/aria2.sh`, aria2FileDir, aria2Dir]).then(() => {
+            msg.success('build finished!');
+        }).catch(e => {
+            msg.error(e);
+        });
+    };
 
-        aria2.stdout.on('data', data => {
-            console.log(data.toString());
-        });
-        aria2.stderr.on('data', error => {
-            console.error(error.toString());
-        });
-        aria2.on('exit', code => {
-            console.log('aria2 exit! code: ' + code.toString());
-        });
-        return true;
-    } catch (e) {
-        return false;
+    if (fs.existsSync(aria2FilePath)) {
+        execShell();
+    } else {
+        msg.success('downloading: ' + aria2FilePath);
+        fsExt.download(aria2ReleaseUri, aria2FilePath).then(() => {
+            msg.success(`downloaded: ${aria2FileDir}/${aria2Dir}.tar.gz`);
+            execShell();
+        }).catch(e => msg.error(e));
     }
 };
 
+let init = () => fsExt.createSync(require.resolve('aria2rc'), path.join(_var.env.homedirc, '.aria2rc'));
+
+let start = () => exec('aria2c', [`--conf-path=${_var.env.homedir}/.aria2rc`]);
+
 let aria2rc = (args) => {
     let methods = {
+        install,
         init,
         start,
     };
 
-    invoke(methods, args, ['--init', '--start']);
+    invoke(methods, args, ['--install', '--init', '--start']);
 };
 
 module.exports = aria2rc;

@@ -20,6 +20,6 @@ let rc = {
 try {
     rc[type](args);
 } catch (e) {
-    msg.error('invalid arguments!');
+    msg.error(e);
 }
 

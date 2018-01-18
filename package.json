@@ -25,6 +25,8 @@
     "aria2rc": "^1.0.*",
     "eslintrc": "^1.0.*",
     "htmlhintrc": "^1.0.*",
+    "make-dir": "^1.1.0",
+    "request": "^2.83.0",
     "stylelintrc": "^1.0.*",
     "ternrc": "^1.0.*",
     "vimrc": "^1.0.*"
