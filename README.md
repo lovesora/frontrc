@@ -39,6 +39,9 @@ rc htmlhint --init
 
 ## aria2
 ```bash
+# install
+rc aria2 --install
+
 # will create ~/.aria2rc
 rc aria2 --init
 
