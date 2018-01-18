@@ -32,7 +32,7 @@ let install = () => {
     }
 };
 
-let init = () => fsExt.createSync(require.resolve('aria2rc'), path.join(_var.env.homedirc, '.aria2rc'));
+let init = () => fsExt.createSync(require.resolve('aria2rc'), path.join(_var.env.homedir, '.aria2rc'));
 
 let start = () => exec('aria2c', [`--conf-path=${_var.env.homedir}/.aria2rc`]);
 
