@@ -1,5 +1,7 @@
 # rc
-nodejs rc manager
+rc manager
+> rc -> run control
+
 
 # Usage
 ## Installation
