@@ -22,14 +22,14 @@
   },
   "homepage": "https://github.com/lovesora/lx-rc#readme",
   "dependencies": {
-    "aria2rc": "^1.0.*",
-    "eslintrc": "^1.0.*",
-    "htmlhintrc": "^1.0.*",
+    "aria2rc": "^1.0.0",
+    "eslintrc": "^1.0.0",
+    "htmlhintrc": "^1.0.0",
     "make-dir": "^1.1.0",
     "ngclirc": "^1.0.0",
     "request": "^2.83.0",
-    "stylelintrc": "^1.0.*",
-    "ternrc": "^1.0.*",
-    "vimrc": "^1.0.*"
+    "stylelintrc": "^1.0.4",
+    "ternrc": "^1.0.0",
+    "vimrc": "^1.0.2"
   }
 }
